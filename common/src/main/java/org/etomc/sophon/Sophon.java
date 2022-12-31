@@ -13,7 +13,7 @@ public class Sophon {
     static Path configFile = SophonExpectPlatform.getConfigDirectory().resolve("weterdorp.json");
     static SophonConfig config = SophonConfig.loadConfigFile(configFile.toFile());
 
-    public static Boolean isModPartlyLoaded(List<String> modList) {
+    public static Boolean isDisModLoaded(List<String> modList) {
         ArrayList<String> list = (ArrayList<String>) modList;
         list.add("torcherino");	//torcherino must be banned from using because it's vicious
         for (String mod : list) {
@@ -32,8 +32,8 @@ public class Sophon {
         memes.add("新人请说出你的常用模组");
         memes.add("快护好自己的PY吧，朋友。");
         memes.add("在？PY又痒了？");
-        memes.add("《MC开发可以有多愚蠢》");
-        memes.add("便秘者罗辑，我是你的破（便）秘人");
+        memes.add("《MC开发究竟可以有多愚蠢》");
+        memes.add("与xx汽车一起玩，这是计划的一部分（？");
 
         return memes.get(random.nextInt(memes.size())-1);
     }
@@ -42,7 +42,7 @@ public class Sophon {
     public static void init() {
         System.out.println(SophonExpectPlatform.getConfigDirectory().toAbsolutePath().normalize().toString());
 
-        if (isModPartlyLoaded(config.bannedMods)) throw new RuntimeException(outputMemeWord());
+        if (isDisModLoaded(config.bannedMods)) throw new RuntimeException(outputMemeWord());
 
     }
 }
