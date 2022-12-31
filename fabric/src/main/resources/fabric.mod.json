@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "sophon",
+  "version": "${version}",
+  "name": "Sophon",
+  "description": "",
+  "authors": [
+    "ETO-MC"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/sophon/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.etomc.sophon.fabric.SophonFabric"
+    ]
+  },
+  "depends": {
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "architectury": ">=6.2.43"
+  }
+}

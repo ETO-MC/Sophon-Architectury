@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "sophon",
+    "version": "${version}",
+    "name": "Sophon",
+    "description": "",
+    "authors": ["ETO-MC"],
+    "contact": {
+      "sources": "https://github.com/architectury/architectury-templates"
+    },
+    "license": "MIT",
+    "icon": "assets/sophon/icon.png",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "entrypoints": {
+      "init": [
+        "org.etomc.sophon.quilt.ExampleModQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": "1.19.x"
+      },
+      {
+        "id": "architectury",
+        "version": ">=6.2.43"
+      }
+    ]
+  }
+}

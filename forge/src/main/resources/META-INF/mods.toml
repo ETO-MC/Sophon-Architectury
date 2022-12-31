@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[42,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "sophon"
+version = "${version}"
+displayName = "Sophon"
+authors = "ETO-MC"
+description = '''
+
+'''
+#logoFile = ""
+
+[[dependencies.sophon]]
+modId = "forge"
+mandatory = true
+versionRange = "[42,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sophon]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sophon]]
+modId = "architectury"
+mandatory = true
+versionRange = "[6.2,)"
+ordering = "AFTER"
+side = "BOTH"
